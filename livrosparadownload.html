@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros para Download</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            width: 100%;
+            font-size: 2rem;
+        }
+        .container {
+            max-width: 1000px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+        .livros {
+            display: flex;
+            justify-content: space-evenly; /* Espaça igualmente os livros */
+            flex-wrap: wrap; /* Permite que os livros se ajustem para a próxima linha */
+            gap: 20px;  /* Espaçamento entre os itens */
+            margin-bottom: 20px;
+        }
+        .livro {
+            text-align: center;
+            width: 45%; /* Faz com que os livros ocupem no máximo metade da linha */
+        }
+        .livro img {
+            max-width: 150px;
+            max-height: 200px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .livro a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+        .livro a:hover {
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Livros para Download</h1>
+        <div class="livros">
+            <div class="livro">
+                <a href="Livros para Download/Alcorão Sagrado.pdf" download>
+                    <img src="Livros para Download/alcorão.webp" alt="Alcorão Sagrado">
+                    <span>Alcorão Sagrado</span>
+                </a>
+            </div>
+            <div class="livro">
+                <a href="Livros para Download/A Fortaleza do Muculmano.pdf" download>
+                    <img src="Livros para Download/fortaleza.webp" alt="A Fortaleza do Muçulmano">
+                    <span>A Fortaleza do Muçulmano</span>
+                </a>
+            </div>
+            <div class="livro">
+                <a href="Livros para Download/Guia para o novo Muculmano.pdf" download>
+                    <img src="Livros para Download/guia_novo_muculmano.webp" alt="Guia para o Novo Muçulmano">
+                    <span>Guia para o Novo Muçulmano</span>
+                </a>
+            </div>
+            <div class="livro">
+                <a href="Livros para Download/Um Breve Guia Ilustrado Para Compreender o Islam.pdf" download>
+                    <img src="Livros para Download/breve_guia_islam.webp" alt="Um Breve Guia Ilustrado Para Compreender o Islam">
+                    <span>Um Breve Guia Ilustrado Para Compreender o Islam</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
